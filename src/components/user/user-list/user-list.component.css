@@ -1,0 +1,68 @@
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-item {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border: 1px solid #e5e5e5; 
+    border-radius: 10px;
+    background-color: #f9f9f9; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+  }
+  
+  .user-item:hover {
+    transform: translateY(-5px);
+    background-color: #e0e0e0;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .user-item-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  
+  .user-item-header h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #000; 
+    margin: 0;
+  }
+  
+  .user-item-header .role {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #666; 
+    margin-left: 10px;
+    font-style: italic; 
+  }
+  
+  .user-item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1rem;
+    color: #333; 
+  }
+  
+  .user-item hr {
+    border: none;
+    border-top: 1px solid #ddd; 
+    margin: 15px 0;
+  }
+  
+  
