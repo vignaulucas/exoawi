@@ -14,8 +14,9 @@ import { MessageService } from '../components/messages/message.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit, OnDestroy {
-  users: User[] = []; // List of users
-  private userCount: number = 3; 
+  users: User[] = [];
+  private userCount: number = 3;
+  title = 'myapp';
 
   constructor(private messageService: MessageService) {}
 

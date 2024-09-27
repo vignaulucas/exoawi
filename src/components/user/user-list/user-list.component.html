@@ -1,3 +1,7 @@
-<div *ngFor="let user of users">
-            <app-user-item [user]="user" class="user-list"></app-user-item>
-</div>
+<h2>User List</h2>
+<div *ngIf="users.length === 0">No users available.</div>
+<ul *ngIf="users.length > 0">
+  <li *ngFor="let user of users">
+    <app-user-item [user]="user"></app-user-item>
+  </li>
+</ul>

@@ -19,5 +19,16 @@ export class User {
     const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return re.test(email);
   }
+
+  public clone(): User {
+    return new User(
+      this.id,
+      this.name,
+      this.firstName,
+      this.role,
+      this.email,
+      this.tel
+    );
+  }
 }
   

@@ -1,7 +1,14 @@
+<h2>User Details</h2>
 
-<div>
-  <h3>{{ user.firstName }} {{ user.name }}</h3> 
-  <p><strong>Role:</strong> {{ user.role }}</p> 
-    <p><strong>Email:</strong> {{ user.email }}</p>
-    <p><strong>Tel:</strong> {{ user.tel }}</p>
-  </div>
+<div *ngIf="user; else userNotFound">
+  <p><strong>ID:</strong> {{ user.id }}</p>
+  <p><strong>First Name:</strong> {{ user.firstName }}</p>
+  <p><strong>Last Name:</strong> {{ user.name }}</p>
+  <p><strong>Role:</strong> {{ user.role }}</p>
+  <p><strong>Email:</strong> {{ user.email }}</p>
+  <p><strong>Phone:</strong> {{ user.tel }}</p>
+</div>
+
+<ng-template #userNotFound>
+  <p>User not found.</p>
+</ng-template>

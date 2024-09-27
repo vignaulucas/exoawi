@@ -1,0 +1,18 @@
+<nav class="navbar">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="/user-list" routerLinkActive="active-link" class="nav-link" [routerLinkActiveOptions]="{ exact: true }">User List</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/user/1" routerLinkActive="active-link" class="nav-link" [routerLinkActiveOptions]="{ exact: true }">User of ID: 1</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/user/2" routerLinkActive="active-link" class="nav-link" [routerLinkActiveOptions]="{ exact: true }">User of ID: 2</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/user/2/edit" routerLinkActive="active-link" class="nav-link" [routerLinkActiveOptions]="{ exact: true }">Edit User ID: 2</a>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

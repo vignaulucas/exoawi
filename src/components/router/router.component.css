@@ -1,0 +1,39 @@
+/* Style général de la navbar */
+.navbar {
+  background-color: #000; /* Fond noir */
+  padding: 15px;
+  display: flex;
+  justify-content: center; /* Centrer le contenu de la navbar */
+}
+
+/* Liste des éléments de la navbar */
+.navbar-nav {
+  list-style: none; /* Supprime les puces */
+  display: flex;
+  gap: 20px; /* Espacement entre les éléments */
+  margin: 0;
+  padding: 0;
+}
+
+/* Style des éléments individuels */
+.nav-item {
+  margin: 0;
+}
+
+/* Style général des liens */
+.nav-link {
+  color: #fff; /* Texte blanc par défaut */
+  text-decoration: none; /* Supprime le soulignement */
+  font-size: 18px; /* Taille de texte agréable */
+  transition: color 0.3s ease; /* Transition douce sur la couleur */
+}
+
+/* Au survol, rendre le texte gris clair */
+.nav-link:hover {
+  color: #ccc; /* Gris clair au survol */
+}
+
+/* Lien actif (lorsque la route est active) */
+.active-link {
+  color: red; /* Texte rouge pour la page active */
+}
